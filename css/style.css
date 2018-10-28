@@ -1,0 +1,305 @@
+/* Общая стилизация*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 76.8em){
+    html {
+        font-size: 52.5%;
+}}
+
+@media (min-width: 256em){
+    html {
+        font-size: 100%;
+}}
+
+
+body {
+    margin: 0;
+    padding:0;
+    background-color: #f7f7f7;
+}
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*Стилизация блока со всем контентом*/
+
+.form {
+    margin: 0 auto;
+    width: 35%;
+    position: relative;
+}
+
+@media (max-width: 76.8em){
+    .form {
+        width: 50%;
+    }}
+
+@media (max-width: 42.5em){
+    .form {
+        width: 80%;
+    }}
+    
+
+
+.form__content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+/*Стилизация header, заголовка*/
+
+.form__header {
+    width: 100%;
+}
+
+.heading__box {
+    display: block;
+    text-align: left;
+    font-size: 3rem;
+    font-family: 'Poppins';
+}
+
+.heading__text--black {
+    color: #000;
+}
+
+.heading__text--gray {
+    color: #b2b2b2;
+}
+
+/*Тело формы*/
+
+.form__body {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0,0,0, 0.4);
+    border-radius: 1rem;
+}
+
+.form__padding {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4rem 2rem 1.5rem 2rem;
+}
+
+
+.form__group:not(last-child) {
+    margin-bottom: 1.8rem; 
+}
+
+.form__group:first-child {
+    float: left;
+    width: 48%;
+    margin-right: 0;
+}
+
+.form__group:nth-child(2) {
+    float: right;
+    width: 48%;
+    margin-left: 0;
+}
+
+
+.form__input {
+    color: #b7b7b7;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    border-radius: .5rem;
+    padding: 1.5rem 5rem 1.5rem 2rem;
+    border: none;
+    font-size: 1.6rem;
+}
+
+
+.username,
+.password {
+    position: relative;
+}
+
+.form__username-img {
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    width: 3.2rem;
+    height: 3.5rem;
+}
+
+.form__password-img {
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    width: 2.4rem;
+    height: 3.2rem;
+}
+
+
+
+.form__input:focus {
+    outline: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.form__input:focus:invalid {
+    border-bottom: 3px solid #fea15d;
+}
+
+
+
+.form__checkbox-group {
+    margin-bottom: 2rem;
+
+}
+
+.form__checkbox-label {
+    position: relative;
+    margin-right: 2rem; 
+
+}
+
+.form__checkbox-input {
+    display: none;
+
+}
+
+/*блок для элемента checkbox*/
+.form__checkbox-label::before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #f0f0f0;
+    vertical-align: middle;
+}
+
+/*стилизация уже cheched елемента. Добавляем галочку */
+.form__checkbox-input:checked + .form__checkbox-label::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/check.png) no-repeat;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form__checkbox-button {
+    margin: 0 0 2rem 1rem;
+    color:#c5c5c5;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/*Стилизация link'oв с доб. лёгенькой анимации*/
+
+.form__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #a8a7a7;
+    font-weight: 900;
+}
+
+.form__link:hover {
+    transform: translate(0, -.2rem);
+    transition: .3s ease;
+}
+
+.form__submit {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.form__submit-btn {
+    display: inline-block;
+    width: 10rem;
+    height: 3.5rem;
+    background: #fea15d;
+    border-radius: .5rem;
+    border: none; 
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    transition: all .3s;
+}
+
+/*Анимация для кнопки*/
+
+.form__submit-btn:hover {
+    cursor: pointer;
+    transform: translate(1px, -2px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, 0.4);
+    background-color: #fdbb8b;
+} 
+
+ .form__submit-btn:focus {
+    outline: none;
+}
+
+
+/*Анимация при нажатии*/
+.form__submit-btn:active {
+    transform: translate(.5px, -1px);
+    box-shadow: 0 .2rem .5rem rgba(0,0,0, 0.4);
+}
+
+/*Стилизация footer'a*/
+.footer {
+    font-size: 1.3rem;
+    color:#c5c5c5;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.login__link,
+.login__link:visited{
+    text-decoration: none;
+    color: #a8a7a7;
+    font-weight: 900;
+}
+
+.footer__info {
+    width: 15.8rem;
+    margin: 0 auto;
+    color:#c5c5c5;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.footer__info-text,
+.footer__info-text:visited {
+    color:#c5c5c5;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer__info-text:hover {
+    color: #a8a7a7;
+    font-weight: 600;
+}
+
+
+
+
+
