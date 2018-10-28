@@ -188,6 +188,7 @@ body {
 }
 
 .form__checkbox-button {
+    cursor: pointer;
     margin: 0 0 2rem 1rem;
     color:#c5c5c5;
     font-size: 1.2rem;
@@ -278,12 +279,15 @@ body {
     color:#c5c5c5;
     font-size: 1.2rem;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .footer__info-text:hover {
     color: #a8a7a7;
     font-weight: 600;
+    cursor: pointer;
 }
+
 
 
 
