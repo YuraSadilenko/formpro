@@ -23,6 +23,7 @@ _v1.1_
  
  _v1.2_ 
  media queries are fixed.
+ Transfer img to icon at the background for input
  
 
 Bags 
@@ -32,4 +33,4 @@ Message me if you'll find problem!
 
 At version 1.1 was fixed few bugs.
 
-At version 1.2 was fixed media queries.
+At version 1.2 was fixed media queries, transfer img to icon at the background for input.
