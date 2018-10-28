@@ -12,12 +12,14 @@ html {
 @media (max-width: 76.8em){
     html {
         font-size: 52.5%;
-}}
+    }
+}
 
 @media (min-width: 250em){
     html {
         font-size: 100%;
-}}
+    }
+}
 
 
 body {
@@ -46,12 +48,14 @@ body {
 @media (max-width: 76.8em){
     .form__content {
         width: 50%;
-    }}
+    }
+}
 
 @media (max-width: 42.5em){
     .form__content {
         width: 80%;
-    }}
+    }
+}
 
 /*Стилизация header, заголовка*/
 
@@ -172,6 +176,7 @@ body {
     height: 1.5rem;
     background-color: #f0f0f0;
     vertical-align: middle;
+    cursor: pointer;
 }
 
 /*стилизация уже cheched елемента. Добавляем галочку */
@@ -217,8 +222,7 @@ body {
 
 .form__submit-btn {
     display: inline-block;
-    width: 10rem;
-    height: 3.5rem;
+    padding: 1rem 2rem;
     background: #fea15d;
     border-radius: .5rem;
     border: none; 
@@ -287,6 +291,7 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
+
 
 
 
