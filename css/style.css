@@ -14,7 +14,7 @@ html {
         font-size: 52.5%;
 }}
 
-@media (min-width: 256em){
+@media (min-width: 250em){
     html {
         font-size: 100%;
 }}
@@ -34,31 +34,24 @@ body {
 
 /*Стилизация блока со всем контентом*/
 
-.form {
+.form__content {
     margin: 0 auto;
     width: 35%;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media (max-width: 76.8em){
-    .form {
+    .form__content {
         width: 50%;
     }}
 
 @media (max-width: 42.5em){
-    .form {
+    .form__content {
         width: 80%;
     }}
-    
-
-
-.form__content {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-}
 
 /*Стилизация header, заголовка*/
 
@@ -127,7 +120,6 @@ body {
     font-size: 1.6rem;
 }
 
-
 .username,
 .password {
     position: relative;
@@ -149,8 +141,6 @@ body {
     height: 3.2rem;
 }
 
-
-
 .form__input:focus {
     outline: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
@@ -160,8 +150,6 @@ body {
     border-bottom: 3px solid #fea15d;
 }
 
-
-
 .form__checkbox-group {
     margin-bottom: 2rem;
 
@@ -170,12 +158,10 @@ body {
 .form__checkbox-label {
     position: relative;
     margin-right: 2rem; 
-
 }
 
 .form__checkbox-input {
     display: none;
-
 }
 
 /*блок для элемента checkbox*/
