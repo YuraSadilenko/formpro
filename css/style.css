@@ -93,7 +93,6 @@ body {
     padding: 4rem 2rem 1.5rem 2rem;
 }
 
-
 .form__group:not(last-child) {
     margin-bottom: 1.8rem; 
 }
@@ -110,7 +109,6 @@ body {
     margin-left: 0;
 }
 
-
 .form__input {
     color: #b7b7b7;
     font-weight: 500;
@@ -123,6 +121,20 @@ body {
     border: none;
     font-size: 1.6rem;
 }
+
+/*Добавление иконок в input*/
+#username {
+    background: rgb(240, 240, 240) url(../img/man.png) no-repeat;
+    background-position: 97% 50%;
+    background-size: 3rem;
+}
+
+#password {
+    background: rgb(240, 240, 240) url(../img/lock.png) no-repeat;
+    background-position: 97% 50%;
+    background-size: 2.8rem;
+}
+
 
 .username,
 .password {
@@ -156,7 +168,6 @@ body {
 
 .form__checkbox-group {
     margin-bottom: 2rem;
-
 }
 
 .form__checkbox-label {
@@ -292,6 +303,7 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
+
 
 
 
