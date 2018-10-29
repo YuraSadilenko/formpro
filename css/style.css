@@ -126,13 +126,13 @@ body {
 }
 
 /*Стилизация иконок к input для password и username*/
-#username {
+.username {
     background: rgb(240, 240, 240) url(../img/man.png) no-repeat;
     background-position: 97% 50%;
     background-size: 3rem;
 }
 
-#password {
+.password {
     background: rgb(240, 240, 240) url(../img/lock.png) no-repeat;
     background-position: 97% 50%;
     background-size: 2.5rem;
